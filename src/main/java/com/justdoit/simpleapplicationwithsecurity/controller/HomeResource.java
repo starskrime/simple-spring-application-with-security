@@ -1,4 +1,4 @@
-package com.justdoit.simpleapplicationwithsecurity;
+package com.justdoit.simpleapplicationwithsecurity.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
