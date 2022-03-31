@@ -22,12 +22,9 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
 
-        //jdbc connection to h2 DB and connected several users with roles
+        //jdbc connection to h2 DB and populated several users with roles
         auth.jdbcAuthentication()
-                .dataSource(dataSource)
-                .withDefaultSchema()
-                .withUser(User.withUsername("user").password("user").roles("USER"))
-                .withUser(User.withUsername("admin").password("admin").roles("ADMIN"));
+                .dataSource(dataSource);
         //jdbc end
 
 
